@@ -32,7 +32,7 @@ export class HomePage {
  
       let mapOptions = {
         center: latLng,
-        zoom: 19,
+        zoom: 16,
         mapTypeId: 'roadmap'
       }
  

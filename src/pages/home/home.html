@@ -6,11 +6,30 @@
     <button ion-fab mini menuToggle><ion-icon name="menu"></ion-icon></button>
 </ion-fab>
 
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="locate"></ion-icon></button>
+  </ion-fab>
+
+
+<div search-container>
+
+<div>	
+	<ion-input type="text" [value]="pickup" [(ngModel)]="pickup" placeholder="Pick up location">
+	</ion-input>
+	<!-- <ion-icon name="pin"></ion-icon> -->
+</div>
+
+<div>
+	<ion-input type="text" [value]="dropoff" [(ngModel)]="dropoff" placeholder="Drop off by City"></ion-input>
+	<!-- <ion-icon name="pin"></ion-icon> -->
+</div>
+</div>
+
+
+
+
 <div #map id="map"></div> 
 
-<ion-input type="text" [value]="pickup" [(ngModel)]="pickup" placeholder="Pick up location"></ion-input>
-
-<ion-input type="text" [value]="dropoff" [(ngModel)]="dropoff" placeholder="Drop off by City"></ion-input>
 
  
 </ion-content>
